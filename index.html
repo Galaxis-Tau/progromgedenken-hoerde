@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Lernwebsite zum Workshop „Erinnern statt vergessen“: Texte und Quellen zur Pogromnacht 1938 in Hörde mit Glossar, Lesemodus, Selbstchecks und Hilfe zu Aufgaben.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<title>Erinnern statt vergessen</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="top" id="top">
+  <div class="top-row">
+    <div class="brand"><b>Erinnern statt vergessen</b><span>Pogromnacht 9.11.1938</span></div>
+    <nav class="seg tabs" id="tabs" role="tablist" aria-label="Bereiche"><span class="thumb"></span></nav>
+    <div class="top-actions"><button class="icon-btn" id="btn-settings" aria-label="Darstellung anpassen" aria-expanded="false"></button></div>
+  </div>
+  <div class="toolbar" id="toolbar" hidden>
+    <button class="tool" id="btn-read" aria-pressed="false"></button>
+    <button class="tool" id="btn-easy" aria-pressed="false"></button>
+    <span class="grow"></span>
+    <button class="tool only-narrow" id="btn-helps"></button>
+  </div>
+</header>
+
+<main id="main"></main>
+
+<div class="readbar" id="readbar" role="toolbar" aria-label="Lesemodus">
+  <button class="icon-btn" id="rb-prev" aria-label="Vorherige Zeile"></button>
+  <span class="count" id="rb-count" aria-live="polite"></span>
+  <button class="icon-btn next" id="rb-next"></button>
+  <button class="icon-btn" id="rb-speak" aria-pressed="false" aria-label="Zeilen vorlesen"></button>
+  <button class="icon-btn" id="rb-close" aria-label="Lesemodus beenden"></button>
+</div>
+
+<div class="pop" id="pop" role="dialog" aria-modal="false"></div>
+<div class="panel" id="panel" role="dialog" aria-label="Darstellung"></div>
+<div class="scrim" id="scrim"></div>
+
+<script src="assets/js/images.js"></script>
+<script src="assets/js/content.js"></script>
+<script src="assets/js/glossary.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
